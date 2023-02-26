@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BaR-TK-z92">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Dog View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AddDogViewController" id="BYZ-38-t0r" customClass="AddDogViewController" customModule="My_Dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dogs Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5zm-bX-KgU">
+                                <rect key="frame" x="16" y="142" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dogs Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HND-Aa-wR7">
+                                <rect key="frame" x="16" y="201" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dogs Favorite Treat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jPH-h4-qzC">
+                                <rect key="frame" x="16" y="260" width="361" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFC-vs-Onh">
+                                <rect key="frame" x="50" y="498.99999999999994" width="293" height="39.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" cornerStyle="medium">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add Dog">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Helvetica"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addDogPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4X-0j-Al8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="تنزيل.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="98V-zD-jBc">
+                                <rect key="frame" x="103" y="339" width="187" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="Q32-yO-tFU"/>
+                                    <constraint firstAttribute="width" constant="187" id="iFe-z4-y2f"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQC-Ea-497">
+                                <rect key="frame" x="16" y="384.66666666666669" width="361" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Button">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addImagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sWj-8A-lBI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oQC-Ea-497" secondAttribute="trailing" constant="16" id="0FV-iO-KpD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HND-Aa-wR7" secondAttribute="trailing" constant="16" id="0I9-7e-xSn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jPH-h4-qzC" secondAttribute="trailing" constant="16" id="3We-r2-Kqh"/>
+                            <constraint firstItem="oQC-Ea-497" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cna-CF-pau"/>
+                            <constraint firstItem="5zm-bX-KgU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="83" id="F3F-aH-OIp"/>
+                            <constraint firstItem="5zm-bX-KgU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="G1E-qf-9ex"/>
+                            <constraint firstItem="HND-Aa-wR7" firstAttribute="top" secondItem="5zm-bX-KgU" secondAttribute="bottom" constant="25" id="HJg-wX-ef9"/>
+                            <constraint firstItem="jPH-h4-qzC" firstAttribute="top" secondItem="HND-Aa-wR7" secondAttribute="bottom" constant="25" id="NvW-L3-eRG"/>
+                            <constraint firstItem="EFC-vs-Onh" firstAttribute="top" secondItem="98V-zD-jBc" secondAttribute="bottom" constant="36" id="QZN-D2-9SP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5zm-bX-KgU" secondAttribute="trailing" constant="16" id="VRF-V9-ncZ"/>
+                            <constraint firstItem="HND-Aa-wR7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="coL-nS-mHd"/>
+                            <constraint firstItem="98V-zD-jBc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="cuD-f6-C9u"/>
+                            <constraint firstItem="oQC-Ea-497" firstAttribute="top" secondItem="jPH-h4-qzC" secondAttribute="bottom" constant="90.670000000000002" id="dzY-vW-AsD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98V-zD-jBc" secondAttribute="trailing" constant="103" id="jDu-aW-CBB"/>
+                            <constraint firstItem="EFC-vs-Onh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="qQr-kh-fIK"/>
+                            <constraint firstItem="jPH-h4-qzC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tEb-xl-Lva"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EFC-vs-Onh" secondAttribute="trailing" constant="50" id="vOA-Vg-E1N"/>
+                            <constraint firstItem="98V-zD-jBc" firstAttribute="top" secondItem="jPH-h4-qzC" secondAttribute="bottom" constant="45" id="vdg-Bc-vT9"/>
+                            <constraint firstItem="EFC-vs-Onh" firstAttribute="top" secondItem="oQC-Ea-497" secondAttribute="bottom" constant="80" id="zV1-9E-Xd4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addDog" destination="EFC-vs-Onh" id="osX-TV-lXf"/>
+                        <outlet property="addImage" destination="oQC-Ea-497" id="hRo-7X-EVH"/>
+                        <outlet property="dogColorField" destination="HND-Aa-wR7" id="Ef7-JS-DSH"/>
+                        <outlet property="dogFoodField" destination="jPH-h4-qzC" id="yGV-67-d2X"/>
+                        <outlet property="dogNameField" destination="5zm-bX-KgU" id="tow-of-KZJ"/>
+                        <outlet property="selectImage" destination="98V-zD-jBc" id="J1d-Hq-DjX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3711" y="1"/>
+        </scene>
+        <!--Edit Dog View Controller-->
+        <scene sceneID="7kr-or-wkG">
+            <objects>
+                <viewController storyboardIdentifier="EditDogViewController" id="8q1-yp-6Ds" customClass="EditDogViewController" customModule="My_Dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w55-ge-LXa">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="jqj-VL-Daa">
+                                <rect key="frame" x="-3" y="-4" width="393" height="852"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dogs Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpS-p5-1Pj">
+                                        <rect key="frame" x="16" y="142" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dogs Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rvW-gh-e7a">
+                                        <rect key="frame" x="16" y="201" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dogs Favorite Treat" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wha-Db-TMN">
+                                        <rect key="frame" x="16" y="260" width="361" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0E-4n-8KV">
+                                        <rect key="frame" x="50" y="499.00000000000006" width="293" height="40.666666666666686"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            </backgroundConfiguration>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Delete Dog">
+                                                    <attributes>
+                                                        <font key="NSFont" size="23" name="Helvetica"/>
+                                                        <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="deleteDogInfo:" destination="8q1-yp-6Ds" eventType="touchUpInside" id="2Q3-gE-yeL"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AHs-SA-lq1">
+                                        <rect key="frame" x="103" y="339" width="187" height="124"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="187" id="172-Hi-JGM"/>
+                                            <constraint firstAttribute="height" constant="124" id="ydP-RN-MNQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhE-yX-Kq3">
+                                        <rect key="frame" x="16" y="384.66666666666669" width="361" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" titleAlignment="center">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Button">
+                                                    <attributes>
+                                                        <font key="NSFont" size="22" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="updateImages:" destination="8q1-yp-6Ds" eventType="touchUpInside" id="mdX-Jw-di6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="iWc-C1-FPG"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="HpS-p5-1Pj" firstAttribute="leading" secondItem="iWc-C1-FPG" secondAttribute="leading" constant="16" id="013-Fu-t4G"/>
+                                    <constraint firstItem="rvW-gh-e7a" firstAttribute="leading" secondItem="iWc-C1-FPG" secondAttribute="leading" constant="16" id="07D-AI-YNA"/>
+                                    <constraint firstItem="iWc-C1-FPG" firstAttribute="trailing" secondItem="M0E-4n-8KV" secondAttribute="trailing" constant="50" id="293-19-lKj"/>
+                                    <constraint firstItem="nhE-yX-Kq3" firstAttribute="leading" secondItem="iWc-C1-FPG" secondAttribute="leading" constant="16" id="2Oy-J3-2tC"/>
+                                    <constraint firstItem="iWc-C1-FPG" firstAttribute="trailing" secondItem="AHs-SA-lq1" secondAttribute="trailing" constant="103" id="6Dr-HQ-0No"/>
+                                    <constraint firstItem="iWc-C1-FPG" firstAttribute="trailing" secondItem="HpS-p5-1Pj" secondAttribute="trailing" constant="16" id="GY4-Eg-Op6"/>
+                                    <constraint firstItem="AHs-SA-lq1" firstAttribute="leading" secondItem="iWc-C1-FPG" secondAttribute="leading" constant="103" id="H9w-Ha-QJM"/>
+                                    <constraint firstItem="rvW-gh-e7a" firstAttribute="top" secondItem="HpS-p5-1Pj" secondAttribute="bottom" constant="25" id="IWT-sT-yWx"/>
+                                    <constraint firstItem="nhE-yX-Kq3" firstAttribute="top" secondItem="wha-Db-TMN" secondAttribute="bottom" constant="90.670000000000002" id="MUI-Me-bSI"/>
+                                    <constraint firstItem="M0E-4n-8KV" firstAttribute="top" secondItem="nhE-yX-Kq3" secondAttribute="bottom" constant="80" id="QqQ-Lm-qrA"/>
+                                    <constraint firstItem="wha-Db-TMN" firstAttribute="leading" secondItem="iWc-C1-FPG" secondAttribute="leading" constant="16" id="R0f-Xi-M5o"/>
+                                    <constraint firstItem="AHs-SA-lq1" firstAttribute="top" secondItem="wha-Db-TMN" secondAttribute="bottom" constant="45" id="U2Y-p7-hOk"/>
+                                    <constraint firstItem="wha-Db-TMN" firstAttribute="top" secondItem="rvW-gh-e7a" secondAttribute="bottom" constant="25" id="VyV-Td-AiP"/>
+                                    <constraint firstItem="HpS-p5-1Pj" firstAttribute="top" secondItem="iWc-C1-FPG" secondAttribute="top" constant="83" id="W8W-3W-NdT"/>
+                                    <constraint firstItem="iWc-C1-FPG" firstAttribute="trailing" secondItem="wha-Db-TMN" secondAttribute="trailing" constant="16" id="Wpj-Lu-Jqh"/>
+                                    <constraint firstItem="iWc-C1-FPG" firstAttribute="trailing" secondItem="rvW-gh-e7a" secondAttribute="trailing" constant="16" id="gnC-id-v6m"/>
+                                    <constraint firstItem="iWc-C1-FPG" firstAttribute="trailing" secondItem="nhE-yX-Kq3" secondAttribute="trailing" constant="16" id="ogP-MX-vYt"/>
+                                    <constraint firstItem="M0E-4n-8KV" firstAttribute="leading" secondItem="iWc-C1-FPG" secondAttribute="leading" constant="50" id="qeX-zT-TeL"/>
+                                    <constraint firstItem="M0E-4n-8KV" firstAttribute="top" secondItem="AHs-SA-lq1" secondAttribute="bottom" constant="36" id="sd4-pQ-4rE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iWP-Wz-wya"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="deleteColor" destination="rvW-gh-e7a" id="Ycg-7A-FKM"/>
+                        <outlet property="deleteFood" destination="wha-Db-TMN" id="FbV-sy-AUs"/>
+                        <outlet property="deleteName" destination="HpS-p5-1Pj" id="fIt-2d-wX2"/>
+                        <outlet property="editeImage" destination="AHs-SA-lq1" id="Kiv-Dk-gHc"/>
+                        <outlet property="updateImage" destination="nhE-yX-Kq3" id="BNT-jL-oZe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x44-8p-dfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4504" y="15"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uyd-8B-gbo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BaR-TK-z92" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Tb-4a-7db">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WJf-7N-mmZ" kind="relationship" relationship="rootViewController" id="pTL-sy-uYd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1J-rW-AXm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1830" y="1"/>
+        </scene>
+        <!--Dogs-->
+        <scene sceneID="Rw9-XX-nk2">
+            <objects>
+                <viewController id="WJf-7N-mmZ" customClass="DogCollectionViewController" customModule="My_Dogs" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ah2-wK-U5t">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Vrj-y4-xsf">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DogsCollectionViewCell" id="UCD-No-Mbf" userLabel="imageDogCell" customClass="DogsCollectionViewCell" customModule="My_Dogs" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666671" y="0.0" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="o5Z-sM-qaR">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4A6-FO-3zk">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="131" id="G8x-Fv-Aex"/>
+                                                <constraint firstAttribute="width" constant="131" id="V0I-LD-3Cf"/>
+                                            </constraints>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCF-tG-UrP">
+                                            <rect key="frame" x="62.666666666666657" y="82.666666666666671" width="75" height="35"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            <connections>
+                                                <action selector="editingButton:" destination="UCD-No-Mbf" eventType="touchUpInside" id="pH4-ca-ZaV"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4A6-FO-3zk" firstAttribute="top" secondItem="o5Z-sM-qaR" secondAttribute="top" id="2Af-YL-jyC"/>
+                                        <constraint firstAttribute="trailing" secondItem="4A6-FO-3zk" secondAttribute="trailing" id="9nh-dn-Kpi"/>
+                                        <constraint firstItem="lCF-tG-UrP" firstAttribute="centerY" secondItem="o5Z-sM-qaR" secondAttribute="centerY" id="Dg1-Yo-bDc"/>
+                                        <constraint firstItem="lCF-tG-UrP" firstAttribute="centerX" secondItem="o5Z-sM-qaR" secondAttribute="centerX" id="RWO-aV-80R"/>
+                                        <constraint firstItem="4A6-FO-3zk" firstAttribute="leading" secondItem="o5Z-sM-qaR" secondAttribute="leading" id="aBS-Be-Pko"/>
+                                        <constraint firstAttribute="bottom" secondItem="4A6-FO-3zk" secondAttribute="bottom" id="hgH-Ka-bv3"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="200" height="200"/>
+                                <connections>
+                                    <outlet property="DogimageView" destination="4A6-FO-3zk" id="yKl-BA-gLQ"/>
+                                    <outlet property="imageButton" destination="lCF-tG-UrP" id="JsV-mP-Yje"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Dogs" id="02M-H0-rc0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="nag-8D-mBa">
+                            <connections>
+                                <action selector="buttin:" destination="WJf-7N-mmZ" id="X5s-sd-qMW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zpH-d9-Dqp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2831.2977099236641" y="0.70422535211267612"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="تنزيل.jpeg" width="275" height="183"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
